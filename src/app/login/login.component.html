@@ -1,0 +1,26 @@
+<div class="login">
+    <mat-card>
+        <h1 class="login-title">Log In</h1>
+        <form class="example-form" (ngSubmit)="onSubmit()" novalidate>
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="admin" name="username" [(ngModel)]="username" [formControl]="usernameFormControl">
+                <mat-error *ngIf="usernameFormControl.hasError('required')">
+                    Username es <strong>obligatorio</strong>
+                </mat-error>
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="password" name="password" type="password" [(ngModel)]="password" [formControl]="passwordFormControl">
+                <mat-error *ngIf="passwordFormControl.hasError('required')">
+                    Password es <strong>obligatorio</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <div class="login-btn">
+                <button mat-raised-button color="warn">Login</button>
+            </div>
+        </form>
+    </mat-card>
+</div>

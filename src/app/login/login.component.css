@@ -1,0 +1,36 @@
+h1 {
+    font-weight: bold;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.login-title {
+    margin-top: 20px;
+}
+
+mat-card {
+    width: 40%;
+}
+
+mat-form-field-appearance-fill mat-form-field-flex {
+    background-color: red;
+ }
+
+.example-form {
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 90%;
+}
+
+.login-btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
